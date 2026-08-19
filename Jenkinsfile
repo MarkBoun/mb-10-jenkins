@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                git 'https://github.com/MarkBoun/mb-10-jenkins.git'
             }
         }
         stage('Build') {
